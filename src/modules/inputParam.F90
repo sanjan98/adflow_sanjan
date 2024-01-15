@@ -571,6 +571,7 @@ module inputPhysics
     ! cpmin_rho            The rho parameter used with the KS-based cavitation sensor.
     ! cpmin_family         The cpmin for a given surface family that does not use
     !                      KS-aggregation, but rather an exact min computation.
+    ! SAConsts             List of 12 SA turbulence model parameters
 
     integer(kind=intType) :: equations, equationMode, flowType
     integer(kind=intType) :: turbModel, cpModel, turbProd
@@ -597,6 +598,7 @@ module inputPhysics
     real(kind=realType) :: cavitationnumber
     real(kind=realType) :: cpmin_rho
     real(kind=realType), dimension(:), allocatable :: cpmin_family
+    real(kind=realType), dimension(12) :: SAConsts
 
 #ifndef USE_TAPENADE
     real(kind=realType) :: alphad, betad
