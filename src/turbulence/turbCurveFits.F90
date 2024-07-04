@@ -23,8 +23,6 @@ contains
         integer(kind=intType) :: ii, nn, start
         real(kind=realType) :: x, x2, x3, upRe
 
-        call saAssign
-
         ! Determine the situation we are dealing with.
 
         if (Re <= reT(0)) then
@@ -126,8 +124,6 @@ contains
         real(kind=realType) :: x, x2, x3, epsWall, fWall
 
         ! Determine the situation we are dealing with.
-
-        call saAssign
 
         if (yp <= ypT(0)) then
 
@@ -339,7 +335,7 @@ contains
         !      Local variables.
         !
         ! integer :: ierr
-        call saAssign
+
         call terminate("initCurveFitDataKtau", &
                        "Not implemented yet")
 
@@ -358,8 +354,6 @@ contains
         !      Local variables.
         !
         integer :: ierr
-
-        call saAssign
 
         ! Set the number of data points and allocate the memory for the
         ! arrays of the curve fits.
@@ -915,7 +909,7 @@ contains
         !      Local variables.
         !
         ! integer :: ierr
-        call saAssign
+
         call terminate("initCurveFitDataKwMod", &
                        "Not implemented yet")
 
@@ -936,8 +930,6 @@ contains
         !      Local variables.
         !
         integer :: ierr
-
-        call saAssign
 
         ! Set the number of data points and allocate the memory for the
         ! arrays of the curve fits.
@@ -1495,8 +1487,6 @@ contains
         !
         integer :: ierr
 
-        call saAssign
-
         ! Set the number of data points and allocate the memory for the
         ! arrays of the curve fits.
 
@@ -1894,7 +1884,6 @@ contains
         !
         !   integer :: ierr
 
-        call saAssign
         call terminate("initCurveFitDataSae", &
                        "Not implemented yet")
 
@@ -1914,8 +1903,6 @@ contains
         !      Local variables.
         !
         integer :: ierr
-
-        call saAssign
 
         ! Determine the version of the v2-f model.
 
