@@ -33,9 +33,6 @@ defaultFuncList = [
     "cofzx",
     "cofzy",
     "cofzz",
-    "colx",
-    "coly",
-    "colz",
 ]
 
 defaultAeroDVs = ["alpha", "beta", "mach", "P", "T", "xRef", "yRef", "zRef"]
